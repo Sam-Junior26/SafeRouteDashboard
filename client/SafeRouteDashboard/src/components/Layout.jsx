@@ -8,7 +8,7 @@ const nav = [
   { to: '/incidents', label: 'Incidents', icon: Shield },
   { to: '/map', label: 'Safety Map', icon: Map },
   { to: '/sos-alerts', label: 'SOS Alerts', icon: Siren },
-  { to: '/campus-locations', label: 'Campus Locations', icon: Building2 },
+  { to: '/safe-zones', label: 'Safe Zones', icon: Building2 },
   { to: '/reports', label: 'Reports', icon: ChartNoAxesCombined },
   { to: '/settings', label: 'Settings', icon: Settings }
 ];

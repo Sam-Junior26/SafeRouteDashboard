@@ -130,7 +130,7 @@ export default function CampusLocationsPage() {
   return (
     <>
       <PageTitle
-        title="Campus locations"
+        title="Safe Zones"
         subtitle="Maintain approved campus facilities, entrances and safe points."
         action={
           <button
@@ -150,7 +150,7 @@ export default function CampusLocationsPage() {
           <SearchBox
             value={search}
             onChange={setSearch}
-            placeholder="Search campus locations"
+            placeholder="Search safe zones"
           />
 
           <button

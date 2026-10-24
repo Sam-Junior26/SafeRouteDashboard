@@ -32,7 +32,7 @@ function RouteTree() {
       <Route path="/incidents/:id" element={<IncidentDetailPage/>}/>
       <Route path="/map" element={<SafetyMapPage/>}/>
       <Route path="/sos-alerts" element={<SOSAlertsPage/>}/>
-      <Route path="/campus-locations" element={<CampusLocationsPage/>}/>
+      <Route path="/safe-zones" element={<CampusLocationsPage/>}/>
       <Route path="/reports" element={<ReportsPage/>}/>
       <Route path="/settings" element={<SettingsPage/>}/>
     </Route>
