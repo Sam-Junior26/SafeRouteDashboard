@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Eye, EyeOff, ShieldCheck } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 import { useLocation, useNavigate } from 'react-router-dom';
+import logo from '../assets/icon (2).png'
 
 export default function LoginPage() {
   const { signIn } = useAuth(); const navigate = useNavigate(); const location = useLocation();
@@ -17,7 +18,7 @@ export default function LoginPage() {
     <div className="login-page">
       <div className="login-decoration">
         <div className="login-logo">
-          <span className="brand-mark"><ShieldCheck size={25} /></span>
+          <img src={logo} alt="" className="brand-mark" />
           <span><b>SafeRoute</b><small>ADMIN CONSOLE</small></span>
         </div>
         <div className="login-message">
@@ -44,7 +45,7 @@ export default function LoginPage() {
       <div className="login-panel">
         <form className="login-form" onSubmit={submit}>
           <div className="login-mobile-brand">
-            <span className="brand-mark"><ShieldCheck size={22} /></span>
+            <img src={logo} alt="" className="brand-mark" />
             <b>SafeRoute</b>
           </div>
           <div className="eyebrow">ADMINISTRATOR ACCESS</div>

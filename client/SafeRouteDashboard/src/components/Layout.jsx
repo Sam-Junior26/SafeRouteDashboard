@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
 import { Activity, Bell, Building2, ChartNoAxesCombined, ChevronLeft, ChevronRight, LayoutDashboard, LogOut, Map, Menu, Settings, Shield, Siren, X } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
+import logo from '../assets/icon (2).png'
 
 const nav = [
   { to: '/dashboard', label: 'Overview', icon: LayoutDashboard },
@@ -35,9 +36,7 @@ export default function DashboardLayout() {
 
       <aside className={`sidebar ${drawer ? 'drawer-open' : ''}`}>
         <div className="brand">
-          <span className="brand-mark">
-            <Shield size={22} />
-          </span>
+          <img src={logo} alt="" className="brand-mark" />
 
           {!collapsed && (
             <span>

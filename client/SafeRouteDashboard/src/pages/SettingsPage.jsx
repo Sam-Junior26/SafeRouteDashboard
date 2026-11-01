@@ -229,15 +229,6 @@ export default function SettingsPage() {
                 </section>
             </div>
 
-            <div className="notice">
-                <ShieldCheck size={18} />
-
-                <span>
-                    Never share your password or place a
-                    Supabase service-role key in frontend
-                    environment variables.
-                </span>
-            </div>
         </>
     );
 }

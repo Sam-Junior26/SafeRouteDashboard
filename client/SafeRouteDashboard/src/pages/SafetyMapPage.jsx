@@ -61,7 +61,7 @@ export default function SafetyMapPage() {
         <>
             <PageTitle
                 title="Safety map"
-                subtitle="View active incident reports and approved campus locations."
+                subtitle="View active incident reports and approved safe zones."
                 action={
                     <button
                         className="btn btn-secondary"
@@ -102,7 +102,7 @@ export default function SafetyMapPage() {
                         <label className="toggle-row">
                             <span>
                                 <i className="legend-dot teal-dot" />
-                                Campus locations
+                                Safe zones
                             </span>
 
                             <input
@@ -127,7 +127,7 @@ export default function SafetyMapPage() {
 
                         <div className="map-control-title location-list-title">
                             <MapPin size={18} />
-                            <b>Campus locations</b>
+                            <b>Safe Zones</b>
 
                             <span className="count-pill">
                                 {filteredLocations.length}
@@ -269,7 +269,7 @@ export default function SafetyMapPage() {
                                 <small>
                                     {selected.reference_number
                                         ? "INCIDENT"
-                                        : "CAMPUS LOCATION"}
+                                        : "SAFE ZONES"}
                                 </small>
 
                                 <b>
